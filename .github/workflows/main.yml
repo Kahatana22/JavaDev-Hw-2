@@ -25,3 +25,6 @@ jobs:
       uses: gradle/gradle-build-action@v2.6.0
       with:
         arguments: test
+    - name: Make Gradle script executable
+      run: chmod +x ./gradlew
+      working-directory: ./path/to/your/project
